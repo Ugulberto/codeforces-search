@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title>CodeProblem</title>
+   <link rel="icon" href="./src/img/favicon.ico" type="image/x-icon">
+   <link href="./src/styles/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+   <main>
+      <h1>Codeforces problem selector</h1>
+      <div id="int">
+         <div id="info">
+            <label for="tags">800 Easy - 3500 Hard</label>
+            <select name="tags" id="tags">
+               <option value="">Select One Tag...</option>
+               <option value="implementation">implementation</option>
+               <option value="math">math</option>
+               <option value="greedy">greedy</option>
+               <option value="strings">strings</option>
+               <option value="brute force">brute force</option>
+               <option value="dp">dp</option>
+               <option value="probabilities">probabilities</option>
+               <option value="data structures">data structures</option>
+            </select>
+         </div>
+         <input id="inp-rating" type="text" placeholder="Introduce un rating" value="">
+         <div id="div-btn">
+            <button id="btn-search">Buscar</button>
+            <button id="btn-random">Random</button>
+         </div>
+      </div>
+      <div class="card-res">
+         <fieldset>
+            <legend>Resultado</legend>
+            <section id="sect">
+               <h2 class="problem-title"></h2>
+               <h3 class="problem-value"></h3>
+               <h3 class="problem-value"></h3>
+            </section>
+         </fieldset>
+      </div>
+      <a id="go" href="">
+         <button>Go</button>
+      </a>
+   </main>
+   <script src="./src/scripts/doc.js"> </script>
+</body>
+
+</html>
